@@ -121,9 +121,25 @@ SSH Connection Confirmation
 
 ## 🧰 Skills Demonstrated
 AWS Cloud Networking (VPCs, Subnets, Security Groups)
+
 Linux System Hardening
+
 Network Security Fundamentals
+
 Firewall & Access Control Management
+
 Malware Scanning & Prevention
+
 Command-Line Operations
+
 Documentation & Reporting
+
+---
+
+## 👨‍💻 Author
+
+Ayo Adejumo
+
+Graduate Student in Cybersecurity | Cloud & SOC Engineer in Training
+
+📍 Philadelphia, PA
