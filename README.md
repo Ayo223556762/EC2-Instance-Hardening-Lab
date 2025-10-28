@@ -45,11 +45,12 @@ sudo ufw allow OpenSSH
 sudo ufw enable
 sudo ufw status
 ```
+
 ✅ Result:
 UFW firewall is active and only allows SSH traffic from IPv4/IPv6 sources.
 
 3. Antivirus Deployment (ClamAV)
-```
+```bash
 sudo apt install clamav -y
 sudo freshclam
 ```
@@ -58,7 +59,7 @@ sudo freshclam
 ClamAV installed and virus definitions updated successfully.
 
 4. Network Validation
-```
+```bash
 sudo netstat -tulnp
 ```
 
