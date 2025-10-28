@@ -44,3 +44,26 @@ Configured **security groups** to allow inbound **SSH (port 22)** only.
 sudo ufw allow OpenSSH
 sudo ufw enable
 sudo ufw status
+```
+✅ Result:
+UFW firewall is active and only allows SSH traffic from IPv4/IPv6 sources.
+
+3. Antivirus Deployment (ClamAV)
+```
+sudo apt install clamav -y
+sudo freshclam
+```
+
+✅ Result:
+ClamAV installed and virus definitions updated successfully.
+
+4. Network Validation
+```
+sudo netstat -tulnp
+```
+
+✅ Result:
+Only essential ports are listening:
+22 → SSH
+53, 68, 323 → System services (DNS, DHCP, NTP)
+All others closed — ensuring a hardened host.
