@@ -71,22 +71,50 @@ All others closed — ensuring a hardened host.
 
 ---
 
-### 🧠 Security Outcomes
-Category	Action	Result
-Access Control	Restricted inbound to SSH only	✅
-Firewall	UFW enabled & verified	✅
-Malware Defense	ClamAV deployed	✅
-Network Visibility	netstat validation	✅
-Compliance	Aligns with AWS & CIS hardening standards ✅
+## 🧠 Security Outcomes
+
+### 🔸 Access Control  
+**Action:** Restricted inbound traffic to SSH only  
+**Result:** ✅ Instance access limited to authorized admin connections  
+
+---
+
+### 🔸 Firewall  
+**Action:** Enabled and verified UFW (Uncomplicated Firewall)  
+**Result:** ✅ Active and enforcing default deny-all policy  
+
+---
+
+### 🔸 Malware Defense  
+**Action:** Installed and updated ClamAV antivirus  
+**Result:** ✅ Real-time malware detection and protection enabled  
+
+---
+
+### 🔸 Network Visibility  
+**Action:** Validated open ports using `netstat`  
+**Result:** ✅ Only essential system services exposed (22, 53, 68, 323)  
+
+---
+
+### 🔸 Compliance  
+**Action:** Implemented CIS-aligned host hardening practices  
+**Result:** ✅ System meets cloud security baseline standards  
+
 
 ---
 
 ## 🖼️ Screenshots
 UFW Firewall Configuration
+
 sudo ufw status results showing SSH only
+
 ClamAV Installation Logs
+
 netstat Output
+
 Verified only required services active
+
 SSH Connection Confirmation
 
 ---
