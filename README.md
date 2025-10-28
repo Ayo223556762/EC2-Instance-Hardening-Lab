@@ -49,7 +49,7 @@ sudo ufw status
 ✅ Result:
 UFW firewall is active and only allows SSH traffic from IPv4/IPv6 sources.
 
-3. Antivirus Deployment (ClamAV)
+### 3. Antivirus Deployment (ClamAV)
 ```bash
 sudo apt install clamav -y
 sudo freshclam
@@ -58,13 +58,44 @@ sudo freshclam
 ✅ Result:
 ClamAV installed and virus definitions updated successfully.
 
-4. Network Validation
+### 4. Network Validation
 ```bash
 sudo netstat -tulnp
 ```
 
-✅ Result:
+### ✅ Result:
 Only essential ports are listening:
 22 → SSH
 53, 68, 323 → System services (DNS, DHCP, NTP)
 All others closed — ensuring a hardened host.
+
+---
+
+### 🧠 Security Outcomes
+Category	Action	Result
+Access Control	Restricted inbound to SSH only	✅
+Firewall	UFW enabled & verified	✅
+Malware Defense	ClamAV deployed	✅
+Network Visibility	netstat validation	✅
+Compliance	Aligns with AWS & CIS hardening standards ✅
+
+---
+
+## 🖼️ Screenshots
+UFW Firewall Configuration
+sudo ufw status results showing SSH only
+ClamAV Installation Logs
+netstat Output
+Verified only required services active
+SSH Connection Confirmation
+
+---
+
+## 🧰 Skills Demonstrated
+AWS Cloud Networking (VPCs, Subnets, Security Groups)
+Linux System Hardening
+Network Security Fundamentals
+Firewall & Access Control Management
+Malware Scanning & Prevention
+Command-Line Operations
+Documentation & Reporting
